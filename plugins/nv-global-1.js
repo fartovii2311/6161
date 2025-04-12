@@ -206,11 +206,6 @@ let vn = './media/удалю.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
-if (!chat.isBanned && chat.audios && m.text.match(/(приеду|скоро буду)/gi)) {    
-let vn = './media/я приду к тебе.mp3'
-this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
-
 if (!chat.isBanned && chat.audios && m.text.match(/(ебал)/gi)) {    
 let vn = './media/ебал.mp4'
 this.sendPresenceUpdate('recording', m.chat)   
@@ -394,9 +389,12 @@ if (!chat.isBanned && chat.audios && m.text.match(/(лот)/gi)) {
                             this.sendPresenceUpdate('recording', m.chat)   
                             this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
+                            if (!chat.isBanned && chat.audios && m.text.match(/(приеду)/gi)) {    
+                                let vn = './media/я приду к тебе.mp3'
+                                this.sendPresenceUpdate('recording', m.chat)   
+                                this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
                     
-
-
    
 return !0 }
 export default handler
