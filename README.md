@@ -1,7 +1,7 @@
 # Lynx-Ai
 
 ---------
-<img src="https://i.ibb.co/Y7mhFdf/file.jpg" alt="Lynx Logo"> 
+<img src="https://avatars.mds.yandex.net/i?id=160e65551cd2ebf1583ae2f3a7860432_sr-4828489-images-thumbs&n=13" alt="Lynx Logo"> 
 
 ---------
 
@@ -16,11 +16,11 @@ apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 
 ```bash
-git clone https://github.com/fartovii2311/111
+git clone https://github.com/fartovii2311/6161
 ```
 
 ```bash
-cd 123
+cd 6161
 ```
 
 ```bash
